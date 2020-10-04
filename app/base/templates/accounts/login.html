@@ -24,7 +24,7 @@
                         {% if msg %}
                             {{ msg | safe }}
                         {% else %}
-                            Add your credentials
+                            Use default credentials: test/pass 
                         {% endif %}                         
                     </li>
                 </ol>
@@ -58,14 +58,14 @@
                             <div class="form-group">
                                 <label class="col-md-12">Username</label>
                                 <div class="col-md-12">
-                                    {{ form.username(class="form-control form-control-line") }}
+                                    <input class="form-control form-control-line" type="text" name="username" value="test">
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label class="col-md-12">Password</label>
                                 <div class="col-md-12">
-                                    {{ form.password(class="form-control form-control-line", type="password") }}
+                                    <input class="form-control form-control-line" type="password" name="password" value="pass">
                                 </div>
                             </div>
 
