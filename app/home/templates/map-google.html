@@ -1,0 +1,63 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Google Maps {% endblock %} 
+
+<!-- Plugins CSS goes HERE  -->
+{% block plugin_stylesheets %}{% endblock plugin_stylesheets %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="container-fluid">
+        <!-- ============================================================== -->
+        <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="row page-titles">
+            <div class="col-md-5 col-8 align-self-center">
+                <h3 class="text-themecolor m-b-0 m-t-0">Google map</h3>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                    <li class="breadcrumb-item active">Google map</li>
+                </ol>
+            </div>
+            <div class="col-md-7 col-4 align-self-center">
+                <a target="_blank"
+                   href="https://appseed.us/admin-dashboards/flask-material-dashboard-wpx-pro"
+                    class="btn waves-effect waves-light btn-danger pull-right hidden-sm-down">
+                    PRO Version
+                </a>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Start Page Content -->
+        <!-- ============================================================== -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-block">
+                        <h4 class="card-title">Simple Basic Map</h4>
+                        <div id="gmaps-simple" class="gmaps"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End PAge Content -->
+        <!-- ============================================================== -->
+    </div>
+
+{% endblock content %}
+
+{% block javascripts %}
+
+    <!-- google maps api -->
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyCUBL-6KdclGJ2a_UpmB2LXvq7VOcPT7K4&sensor=true"></script>
+    <script src="/static/assets/plugins/gmaps/gmaps.min.js"></script>
+    <script src="/static/assets/plugins/gmaps/jquery.gmaps.js"></script>
+
+{% endblock javascripts %}

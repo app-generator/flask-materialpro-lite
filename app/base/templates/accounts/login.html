@@ -1,68 +1,93 @@
-{% extends "layouts/base-fullscreen.html" %}
 
-{% block title %} Login {% endblock %}
+{% extends "layouts/base.html" %}
 
-{% block content %}   
+{% block title %} Register {% endblock %} 
 
-    <div class="auth-wrapper">
-        <div class="auth-content">
-            <div class="auth-bg">
-                <span class="r"></span>
-                <span class="r s"></span>
-                <span class="r s"></span>
-                <span class="r"></span>
-            </div>
-            <div class="card">
-                <div class="card-body text-center">
-                    <div class="mb-4">
-                        <i class="feather icon-unlock auth-icon"></i>
-                    </div>
-                    <h3 class="mb-4">Login</h3>
+<!-- Plugins CSS goes HERE  -->
+{% block plugin_stylesheets %}{% endblock plugin_stylesheets %}
 
-                    <span class="mb-0 text-muted">
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="container-fluid">
+        
+        <!-- ============================================================== -->
+        <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="row page-titles">
+            <div class="col-md-5 col-8 align-self-center">
+                <h3 class="text-themecolor m-b-0 m-t-0">Login</h3>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
                         {% if msg %}
                             {{ msg | safe }}
                         {% else %}
-                            Default Credentials: test / pass
-                        {% endif %} 
-                    </span>
-
-                    <br />
-                    <br />
-                    
-                    <form role="form" method="post" action="">
-
-                        {{ form.hidden_tag() }}                    
-
-                        <div class="input-group mb-3">
-                            {{ form.username(placeholder="Username", class="form-control") }}
-                        </div>
-                        
-                        <div class="input-group mb-4">
-                            {{ form.password(placeholder="Password", class="form-control", type="password") }}
-                        </div>
-                        
-                        <div class="form-group text-left">
-                            <div class="checkbox checkbox-fill d-inline">
-                                <input type="checkbox" name="checkbox-fill-1" id="checkbox-fill-a1" checked="">
-                                <label for="checkbox-fill-a1" class="cr"> Save Details</label>
-                            </div>
-                        </div>
-                        <button type="submit" name="login" class="btn btn-primary shadow-2 mb-4">Login</button>
-
-                    </form>
-
-                    <p class="mb-0 text-muted">Don’t have an account? <a href="{{ url_for('base_blueprint.register') }}" >Signup</a></p>
-                    <br />
-                    <p class="mb-2 text-muted">
-                        &copy; <a target="_blank" rel="sponsored noopener noreferrer"  
-                                  href="https://codedthemes.com/?ref=appseed">CodedThemes</a> 
-                        - <a target="_blank" rel="noopener noreferrer"  
-                             href="https://appseed.us/boilerplate-code/flask-dashboard">Flask Boilerplate Dashboard</a>.
-                    </p>
-                </div>
+                            Add your credentials
+                        {% endif %}                         
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-7 col-4 align-self-center">
+                <a target="_blank"
+                   href="https://appseed.us/admin-dashboards/flask-material-dashboard-wpx-pro"
+                    class="btn waves-effect waves-light btn-danger pull-right hidden-sm-down">
+                    PRO Version
+                </a>
             </div>
         </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Start Page Content -->
+        <!-- ============================================================== -->
+        <!-- Row -->
+        <div class="row">
+
+            <!-- Column -->
+            <div class="col-lg-8 col-xlg-9 col-md-7">
+                <div class="card">
+                    <div class="card-block">
+
+                        <form method="post" action="" class="form-horizontal form-material">
+                            
+                            {{ form.hidden_tag() }} 
+
+                            <div class="form-group">
+                                <label class="col-md-12">Username</label>
+                                <div class="col-md-12">
+                                    {{ form.username(class="form-control form-control-line") }}
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-12">Password</label>
+                                <div class="col-md-12">
+                                    {{ form.password(class="form-control form-control-line", type="password") }}
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <button type="submit" name="login" class="btn btn-success">Login</button>
+                                    &nbsp;&nbsp; Don't have an account? <a href="{{ url_for('base_blueprint.register') }}">Register</a>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+        </div>
+        <!-- Row -->
+        <!-- ============================================================== -->
+        <!-- End PAge Content -->
+        <!-- ============================================================== -->
     </div>
 
 {% endblock content %}
+
+{% block javascripts %}{% endblock javascripts %}

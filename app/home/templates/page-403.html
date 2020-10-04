@@ -1,33 +1,37 @@
 {% extends "layouts/base-fullscreen.html" %}
 
-{% block title %} 403 Page {% endblock %}
+{% block title %} Page 403 {% endblock %} 
 
-{% block content %}   
+<!-- Plugins CSS goes HERE  -->
+{% block plugin_stylesheets %}{% endblock plugin_stylesheets %}
 
-    <div class="auth-wrapper">
-        <div class="auth-content">
-            <div class="auth-bg">
-                <span class="r"></span>
-                <span class="r s"></span>
-                <span class="r s"></span>
-                <span class="r"></span>
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <section id="wrapper" class="error-page">
+        <div class="error-box">
+            
+            <div class="error-body text-center">
+                <h1>403</h1>
+                <h3 class="text-uppercase">Access Denied</h3>
+                <p class="text-muted m-t-30 m-b-30">Please contact support or authenticate.</p>
+                <a href="{{ url_for('base_blueprint.login') }}" 
+                   class="btn btn-info btn-rounded waves-effect waves-light m-b-40">Login</a>
             </div>
-            <div class="card">
-                <div class="card-body text-center">
-                    <div class="mb-4">
-                        <i class="feather x-circle"></i>
-                    </div>
-                    <h3 class="mb-4">Error 403</h3>
 
-                    <br />
-
-                    <span class="mb-0 text-muted">
-                        Access denied - Please <a href={{ url_for('base_blueprint.login') }} >authenticate</a> 
-                    </span>
-
-                </div>
-            </div>
+            <footer class="footer text-center"> 
+                &copy; <a target="_blank" href="https://www.wrappixel.com/">WrapPixel</a>
+                - coded by <a target="_blank" href="https://appseed.us">AppSeed</a>.
+            </footer>
+            
         </div>
-    </div>
+    </section>
 
 {% endblock content %}
+
+{% block javascripts %}{% endblock javascripts %}
