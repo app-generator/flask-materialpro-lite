@@ -13,6 +13,8 @@ Open-Source **Flask Dashboard** coded with basic modules, database, ORM and depl
 - Deployment scripts: Docker, Gunicorn / Nginx, Heroku
 - Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
 
+<br />
+
 > Links
 
 - [Flask Material Lite](https://appseed.us/admin-dashboards/flask-dashboard-material-lite) - product page
