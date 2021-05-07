@@ -16,7 +16,8 @@ Open-Source **Flask Dashboard** coded with basic modules, database, ORM and depl
 > Links
 
 - [Flask Material Lite](https://appseed.us/admin-dashboards/flask-dashboard-material-lite) - product page
-- [Flask Material Lite - Demo](https://flask-dashboard-material-lite.appseed.us/) - LIVE deployment
+- [Flask Material Lite](https://flask-dashboard-material-lite.appseed.us/) - LIVE deployment
+- [Flask Material Lite](https://docs.appseed.us/products/flask-dashboards/materialpro-lite) - product documentation
 
 <br />
 
