@@ -29,13 +29,6 @@
                         href="/page-404.html" aria-expanded="false"><i class="mdi me-2 mdi-help-circle"></i><span
                             class="hide-menu">Error 404</span></a>
                 </li>
-                <li class="text-center p-20 upgrade-btn">
-                    <a href="https://apspeed.us/support/"
-                        class="btn btn-warning text-white mt-4" 
-                        target="_blank">
-                        Get Support
-                    </a>
-                </li>
             </ul>
 
         </nav>
@@ -52,12 +45,12 @@
             </div>
             <div class="col-4 link-wrap">
                 <!-- item-->
-                <a href="https://appseed.us/support/" class="link" data-toggle="tooltip" title="" data-original-title="Email"><i
+                <a href="https://appseed.us/support/" target="_blank" class="link" data-toggle="tooltip" title="" data-original-title="Email"><i
                         class="mdi mdi-gmail"></i></a>
             </div>
             <div class="col-4 link-wrap">
                 <!-- item-->
-                <a href="/login.html" class="link" data-toggle="tooltip" title="" data-original-title="Logout"><i
+                <a href="{{ url_for('authentication_blueprint.logout') }}" class="link" data-toggle="tooltip" title="" data-original-title="Logout"><i
                         class="mdi mdi-power"></i></a>
             </div>
         </div>

@@ -1,0 +1,103 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Error 404 {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- ============================================================== -->
+    <!-- Login box.scss -->
+    <!-- ============================================================== -->
+
+    <div class="error-box">
+        <div class="error-body">
+            
+            <div class="card col-lg-3 mx-auto">
+                <div class="row text-center justify-content-center">
+                    <h4 class="card-title mt-4">
+                        MaterialPRO Lite
+                    </h4>
+                    <h6 class="card-subtitle mt-2">
+                        {% if msg %}
+                            <span class="text-danger">{{ msg | safe }}</span>
+                        {% else %}
+                            Add your credentials
+                        {% endif %}  
+                    </h6>
+                </div>    
+                <div class="card-body profile-card">
+
+                    {% if success %}
+                    
+                        <div class="row mt-4">
+                            <div class="col text-center">
+                                <a href="{{ url_for('authentication_blueprint.login') }}" class="btn btn-success mx-auto">Login</a> 
+                            </div>
+                        </div>
+
+                    {% else %}
+
+                        <form method="post" action="" class="form-horizontal form-material">
+                            
+                            {{ form.hidden_tag() }}
+
+                            <div class="form-group">
+                                <label class="col-md-12">Username</label>
+                                <div class="col-md-12">
+                                    {{ form.username(class="form-control form-control-line") }}
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-12">Email</label>
+                                <div class="col-md-12">
+                                    {{ form.email(class="form-control form-control-line", type="email") }}
+                                </div>
+                            </div>                        
+
+                            <div class="form-group">
+                                <label class="col-md-12">Password</label>
+                                <div class="col-md-12">
+                                    {{ form.password(class="form-control form-control-line", type="password") }}
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col text-center">
+                                    <button type="submit" name="register" class="btn btn-success mx-auto">Register</button> 
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col text-center">
+                                    Already have an account? <a href="{{ url_for('authentication_blueprint.login') }}">Login</a>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    {% endif %}
+
+                </div>
+            </div>            
+            
+        </div>
+        <footer class="footer text-center w-100">
+            &copy; WrapPixel - Coded by AppSeed.
+        </footer>
+    </div>
+
+{% endblock content %}
+
+{% block javascripts %}
+
+    <!-- ============================================================== -->
+    <!-- This page plugin js -->
+    <!-- ============================================================== -->
+    <script>
+        $(".preloader").fadeOut();
+    </script>
+
+{% endblock javascripts %}
