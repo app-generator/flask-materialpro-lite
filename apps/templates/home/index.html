@@ -7,11 +7,11 @@
 {% block stylesheets %}
 
     <!-- chartist CSS -->
-    <link href="/static/assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
-    <link href="/static/assets/plugins/chartist-js/dist/chartist-init.css" rel="stylesheet">
-    <link href="/static/assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/plugins/chartist-js/dist/chartist-init.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
     <!--This page css - Morris CSS -->
-    <link href="/static/assets/plugins/c3-master/c3.min.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/plugins/c3-master/c3.min.css" rel="stylesheet">
 
 {% endblock stylesheets %}
 
@@ -128,10 +128,10 @@
             <div class="col-lg-4 col-xlg-3">
                 <!-- Column -->
                 <div class="card">
-                    <img class="card-img-top" src="/static/assets/images/background/profile-bg.jpg"
+                    <img class="card-img-top" src="{{ config.ASSETS_ROOT }}/images/background/profile-bg.jpg"
                         alt="Card image cap">
                     <div class="card-body little-profile text-center">
-                        <div class="pro-img"><img src="/static/assets/images/users/4.jpg" alt="user"></div>
+                        <div class="pro-img"><img src="{{ config.ASSETS_ROOT }}/images/users/4.jpg" alt="user"></div>
                         <h3 class="mb-0">Angela Dominic</h3>
                         <p>Web Designer &amp; Developer</p>
                         <a href="javascript:void(0)"
@@ -163,7 +163,7 @@
                             <div class="message-widget contact-widget">
                                 <!-- Message -->
                                 <a href="#" class="d-flex align-items-center">
-                                    <div class="user-img mb-0"> <img src="/static/assets/images/users/1.jpg"
+                                    <div class="user-img mb-0"> <img src="{{ config.ASSETS_ROOT }}/images/users/1.jpg"
                                             alt="user" class="img-circle"> <span
                                             class="profile-status online pull-right"></span> </div>
                                     <div class="mail-contnet">
@@ -173,7 +173,7 @@
                                 </a>
                                 <!-- Message -->
                                 <a href="#" class="d-flex align-items-center">
-                                    <div class="user-img mb-0"> <img src="/static/assets/images/users/2.jpg"
+                                    <div class="user-img mb-0"> <img src="{{ config.ASSETS_ROOT }}/images/users/2.jpg"
                                             alt="user" class="img-circle"> <span
                                             class="profile-status busy pull-right"></span> </div>
                                     <div class="mail-contnet">
@@ -192,7 +192,7 @@
                                 </a>
                                 <!-- Message -->
                                 <a href="#" class="d-flex align-items-center">
-                                    <div class="user-img mb-0"> <img src="/static/assets/images/users/4.jpg"
+                                    <div class="user-img mb-0"> <img src="{{ config.ASSETS_ROOT }}/images/users/4.jpg"
                                             alt="user" class="img-circle"> <span
                                             class="profile-status offline pull-right"></span> </div>
                                     <div class="mail-contnet">
@@ -224,7 +224,7 @@
                             <div class="card-body">
                                 <div class="profiletimeline border-start-0">
                                     <div class="sl-item">
-                                        <div class="sl-left"> <img src="/static/assets/images/users/1.jpg" alt="user"
+                                        <div class="sl-left"> <img src="{{ config.ASSETS_ROOT }}/images/users/1.jpg" alt="user"
                                                 class="img-circle"> </div>
                                         <div class="sl-right">
                                             <div><a href="#" class="link">John Doe</a> <span class="sl-date">5
@@ -232,16 +232,16 @@
                                                 <p>assign a new task <a href="#"> Design weblayout</a></p>
                                                 <div class="row">
                                                     <div class="col-lg-3 col-md-6 mb-3"><img
-                                                            src="/static/assets/images/big/img1.jpg" alt="user"
+                                                            src="{{ config.ASSETS_ROOT }}/images/big/img1.jpg" alt="user"
                                                             class="img-responsive radius w-100"></div>
                                                     <div class="col-lg-3 col-md-6 mb-3"><img
-                                                            src="/static/assets/images/big/img2.jpg" alt="user"
+                                                            src="{{ config.ASSETS_ROOT }}/images/big/img2.jpg" alt="user"
                                                             class="img-responsive radius w-100"></div>
                                                     <div class="col-lg-3 col-md-6 mb-3"><img
-                                                            src="/static/assets/images/big/img3.jpg" alt="user"
+                                                            src="{{ config.ASSETS_ROOT }}/images/big/img3.jpg" alt="user"
                                                             class="img-responsive radius w-100"></div>
                                                     <div class="col-lg-3 col-md-6 mb-3"><img
-                                                            src="/static/assets/images/big/img4.jpg" alt="user"
+                                                            src="{{ config.ASSETS_ROOT }}/images/big/img4.jpg" alt="user"
                                                             class="img-responsive radius w-100"></div>
                                                 </div>
                                                 <div class="like-comm"> <a href="javascript:void(0)"
@@ -255,14 +255,14 @@
                                     </div>
                                     <hr>
                                     <div class="sl-item">
-                                        <div class="sl-left"> <img src="/static/assets/images/users/2.jpg" alt="user"
+                                        <div class="sl-left"> <img src="{{ config.ASSETS_ROOT }}/images/users/2.jpg" alt="user"
                                                 class="img-circle"> </div>
                                         <div class="sl-right">
                                             <div> <a href="#" class="link">John Doe</a> <span class="sl-date">5
                                                     minutes ago</span>
                                                 <div class="mt-3 row">
                                                     <div class="col-md-3 col-xs-12"><img
-                                                            src="/static/assets/images/big/img1.jpg" alt="user"
+                                                            src="{{ config.ASSETS_ROOT }}/images/big/img1.jpg" alt="user"
                                                             class="img-responsive w-100 radius"></div>
                                                     <div class="col-md-9 col-xs-12">
                                                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -282,7 +282,7 @@
                                     </div>
                                     <hr>
                                     <div class="sl-item">
-                                        <div class="sl-left"> <img src="/static/assets/images/users/3.jpg" alt="user"
+                                        <div class="sl-left"> <img src="{{ config.ASSETS_ROOT }}/images/users/3.jpg" alt="user"
                                                 class="img-circle"> </div>
                                         <div class="sl-right">
                                             <div><a href="#" class="link">John Doe</a> <span class="sl-date">5
@@ -302,7 +302,7 @@
                                     </div>
                                     <hr>
                                     <div class="sl-item">
-                                        <div class="sl-left"> <img src="/static/assets/images/users/4.jpg" alt="user"
+                                        <div class="sl-left"> <img src="{{ config.ASSETS_ROOT }}/images/users/4.jpg" alt="user"
                                                 class="img-circle"> </div>
                                         <div class="sl-right">
                                             <div><a href="#" class="link">John Doe</a> <span class="sl-date">5
@@ -460,12 +460,12 @@
     <!-- This page plugins -->
     <!-- ============================================================== -->
     <!-- chartist chart -->
-    <script src="/static/assets/plugins/chartist-js/dist/chartist.min.js"></script>
-    <script src="/static/assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/plugins/chartist-js/dist/chartist.min.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
     <!--c3 JavaScript -->
-    <script src="/static/assets/plugins/d3/d3.min.js"></script>
-    <script src="/static/assets/plugins/c3-master/c3.min.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/plugins/d3/d3.min.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/plugins/c3-master/c3.min.js"></script>
     <!--Custom JavaScript -->
-    <script src="/static/assets/js/pages/dashboards/dashboard1.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/js/pages/dashboards/dashboard1.js"></script>
 
 {% endblock javascripts %}    

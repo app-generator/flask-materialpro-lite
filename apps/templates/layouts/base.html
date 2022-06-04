@@ -16,13 +16,13 @@
     </title>
     
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ config.ASSETS_ROOT }}/images/favicon.png">
 
     <!-- Specific Page CSS goes HERE  -->
     {% block stylesheets %}{% endblock stylesheets %}
 
     <!-- Custom CSS -->
-    <link href="/static/assets/css/style.min.css" rel="stylesheet">    
+    <link href="{{ config.ASSETS_ROOT }}/css/style.min.css" rel="stylesheet">    
 
 </head>
 <body>
@@ -67,7 +67,7 @@
     <!-- Specific Page JS goes HERE  -->
     {% block javascripts %}{% endblock javascripts %}
 
-    <script src="/static/assets/js/custom.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/js/custom.js"></script>
 
 </body>
 </html>
