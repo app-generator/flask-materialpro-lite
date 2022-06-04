@@ -149,7 +149,5 @@ The project is coded using blueprints, app factory pattern, dual configuration p
 
 <br />
 
-<br />
-
 ---
 [Flask Material Lite](https://appseed.us/product/material-wpx/flask/) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
