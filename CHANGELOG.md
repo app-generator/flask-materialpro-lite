@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.3] 2022-06-04
+### Improvements
+
+- Bump UI Version: [v1.0.2](https://github.com/app-generator/wp-materialpro-lite)
+- Codebase Update
+
 ## [1.0.2] 2022-01-18
 ### Improvements
 
