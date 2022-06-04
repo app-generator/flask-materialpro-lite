@@ -1,0 +1,40 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Error 500 {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <!-- ============================================================== -->
+    <!-- Login box.scss -->
+    <!-- ============================================================== -->
+    <div class="error-box">
+        <div class="error-body text-center">
+            <h1 class="error-title">500</h1>
+            <h3 class="text-uppercase error-subtitle">
+                SERVER ERROR
+            </h3>
+            <p class="text-muted mb-4 mt-4">
+                Please retry to access the page in a few minutes.   
+            </p>
+            <a href="/" class="btn btn-info btn-rounded waves-effect waves-light mb-4 text-white">Back to home</a>
+        </div>
+        <footer class="footer text-center w-100">
+            &copy; WrapPixel - Coded by AppSeed.
+        </footer>
+    </div>
+
+{% endblock content %}
+
+{% block javascripts %}
+
+    <!-- ============================================================== -->
+    <!-- This page plugin js -->
+    <!-- ============================================================== -->
+    <script>
+        $(".preloader").fadeOut();
+    </script>
+
+{% endblock javascripts %}
