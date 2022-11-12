@@ -7,13 +7,24 @@ Open-Source **Flask Dashboard** coded with basic modules, database, ORM and depl
 
 <br />
 
+## `PROMO` [Black Friday 2022](https://blog.appseed.us/black-friday-2022-vote-your-discount/)
+
+> This [campaign](https://blog.appseed.us/black-friday-2022-vote-your-discount/) starts on `15-NOV` and the users are able to `vote their discount`: **50, 60, 70%**: 
+
+- 👉 [Discord](https://discord.gg/fZC6hup) `announcements` channel
+- 👉 [Twitter](https://twitter.com/webappseed) (official account) 
+
+[![black-friday-2022-cover](https://user-images.githubusercontent.com/51070104/201459148-7561df9f-0a7d-4d1a-bf44-a1ac5e89c175.jpg)](https://blog.appseed.us/black-friday-2022-vote-your-discount/)
+
+<br />
+
 > 🚀 Built with [App Generator](https://appseed.us/generator/)
 
-- `Up-to-date dependencies`
-- `DBMS`: SQLite
-- `DB Tools`: SQLAlchemy ORM, Flask-Migrate (schema migrations)
-- Session-Based authentication (via **flask_login**), Forms validation
-- `Deployment`: **Docker**, Gunicorn / Nginx, HEROKU
+- ✅ `Up-to-date dependencies`
+- ✅ `DBMS`: SQLite
+- ✅ `DB Tools`: SQLAlchemy ORM, Flask-Migrate (schema migrations)
+- ✅ Session-Based authentication (via **flask_login**), Forms validation
+- ✅ `Deployment`: **Docker**, Gunicorn / Nginx, HEROKU
 
 <br />
 
