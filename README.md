@@ -1,6 +1,6 @@
 # [Flask MaterialPro Lite](https://appseed.us/product/material-wpx/flask/)
 
-Open-Source **Flask Dashboard** coded with basic modules, database, ORM and deployment scripts on top of MaterialPro Bootstrap Lite, a modern Bootstrap dashboard design. [WrapPixel](https://appseed.us/agency/wrappixel)'s **MaterialPro Bootstrap Lite** is one of the best Bootstrap templates for admin dashboards and control admin panels. This powerful and competent Bootstrap 4 admin template is based on HTML and is built with the CSS framework. 
+Open-Source **[Flask Dashboard](https://appseed.us/admin-dashboards/flask/)** coded with basic modules, database, ORM, and deployment scripts on top of MaterialPro Bootstrap Lite, a modern Bootstrap dashboard design. WrapPixel's **MaterialPro Bootstrap Lite** is one of the best Bootstrap templates for admin dashboards and control admin panels. This powerful and competent Bootstrap 4 admin template is based on HTML and is built with the CSS framework. 
 
 - 👉 [Flask Material Lite](https://appseed.us/product/material-wpx/flask/) - product page
 - 👉 [Flask Material Lite](https://flask-materialpro-lite.appseed-srv1.com) - LIVE deployment
